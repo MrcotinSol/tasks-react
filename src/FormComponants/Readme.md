@@ -1,0 +1,1 @@
+Les éléments listés dans ce dossier sont des composants de formulaires appelés par FormInterpreter.jsx, ils sont importables par le biais de index.jsx
