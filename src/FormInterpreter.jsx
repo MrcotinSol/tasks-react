@@ -2,7 +2,7 @@ import { Avatar, Button, Select, SelectItem } from "@heroui/react";
 import { capitalize, lowerCase } from "lodash";
 import { Accordion, AccordionItem } from "@heroui/react";
 import { RiEdit2Fill } from "react-icons/ri";
-import { TextInput, FormLocation, DateInput } from "./FormComponants";
+import { TextInput, LocationInput, DateInput } from "./FormComponants";
 
 const interpretElement = ({ element, data, index }) => {
   switch (element.field_type) {
@@ -19,7 +19,7 @@ const interpretElement = ({ element, data, index }) => {
           );
       }
     case "location":
-      return <FormLocation element={element} data={data} index={index} />;
+      return <LocationInput element={element} data={data} index={index} />;
     case "datepicker":
       return <DateInput element={element} data={data} index={index} />;
     case "select":
